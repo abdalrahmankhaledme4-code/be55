@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.unsplash.com data:; style-src 'self' 'unsafe-inline'; script-src 'self'">
+
+<title>HomeStyle Furniture</title>
+
+<link rel="stylesheet" href="my wt-e dw.css">
+
+</head>
+
+<body>
+
+<a href="#mainContent" class="skipLink">Skip to main content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="siteHeader">
+
+    <div class="headerInner">
+
+        <a href="index.html" class="logo">
+            🛋️ <span>HomeStyle Furniture</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktopNav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="#products">Living Room</a>
+            <a href="#products">Bedroom</a>
+            <a href="#products">Office</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="headerButtons">
+
+            <!-- Logged OUT state -->
+            <div id="authArea" class="authArea">
+                <button
+                    id="loginBtn"
+                    class="authBtn"
+                    type="button">
+                    Login
+                </button>
+
+                <button
+                    id="signupBtn"
+                    class="authBtn signupBtn"
+                    type="button">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- Logged IN state -->
+            <div id="userArea" class="userArea" hidden>
+
+                <img
+                    id="userAvatar"
+                    class="userAvatar"
+                    src=""
+                    alt="User avatar">
+
+                <button
+                    id="logoutBtn"
+                    class="authBtn logoutBtn"
+                    type="button">
+                    Logout
+                </button>
+
+            </div>
+
+            <button
+                id="menuBtn"
+                class="smallBtn menuBtn"
+                type="button"
+                aria-label="Open menu"
+                aria-expanded="false"
+                aria-controls="mobileMenu">
+                ☰
+            </button>
+
+            <button
+                id="cartBtn"
+                class="smallBtn cartTopBtn"
+                type="button"
+                aria-label="View shopping cart">
+                🛒
+                <span id="topCartCount" class="cartCountBadge">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<div id="mobileMenu" class="menu" aria-hidden="true">
+
+    <nav aria-label="Mobile navigation">
+        <a href="index.html">🏠 Home</a>
+        <a href="#products">🛋️ Living Room</a>
+        <a href="#products">🛏️ Bedroom</a>
+        <a href="#products">💻 Office</a>
+        <a href="contact.html">📞 Contact</a>
+        <a href="#" id="profileMenuLink">👤 Profile</a>
+        <a href="#">⚙️ Settings</a>
+    </nav>
+
+</div>
+
+<!-- ================= SEARCH ================= -->
+<main id="mainContent">
+
+    <section class="search" aria-label="Product search">
+
+        <label for="searchBox" class="searchLabel">
+            Find your furniture
+        </label>
+
+        <input
+            type="search"
+            id="searchBox"
+            placeholder="Search furniture..."
+            autocomplete="off"
+            aria-label="Search furniture">
+
+        <p id="searchMessage" class="searchMessage" aria-live="polite"></p>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="products" id="products" aria-label="Furniture products">
+
+        <!-- Sofa -->
+        <article class="card">
+
+            <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80"
+                alt="Modern sofa"
+                class="productImage"
+                loading="lazy">
+
+            <h2>Sofa</h2>
+
+            <p class="price">£399</p>
+
+            <button
+                class="cartBtn"
+                type="button"
+                data-name="Sofa"
+                data-price="399">
+                Add to Cart
+            </button>
+
+        </article>
+
+        <!-- Chair -->
+        <article class="card">
+
+            <img
+                src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=80"
+                alt="Modern chair"
+                class="productImage"
+                loading="lazy">
+
+            <h2>Chair</h2>
+
+            <p class="price">£89</p>
+
+            <button
+                class="cartBtn"
+                type="button"
+                data-name="Chair"
+                data-price="89">
+                Add to Cart
+            </button>
+
+        </article>
+
+        <!-- Table -->
+        <article class="card">
+
+            <img
+                src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=700&q=80"
+                alt="Modern table"
+                class="productImage"
+                loading="lazy">
+
+            <h2>Table</h2>
+
+            <p class="price">£149</p>
+
+            <button
+                class="cartBtn"
+                type="button"
+                data-name="Table"
+                data-price="149">
+                Add to Cart
+            </button>
+
+        </article>
+
+        <!-- Bed -->
+        <article class="card">
+
+            <img
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80"
+                alt="Modern bed"
+                class="productImage"
+                loading="lazy">
+
+            <h2>Bed</h2>
+
+            <p class="price">£599</p>
+
+            <button
+                class="cartBtn"
+                type="button"
+                data-name="Bed"
+                data-price="599">
+                Add to Cart
+            </button>
+
+        </article>
+
+        <!-- Desk -->
+        <article class="card">
+
+            <img
+                src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=700&q=80"
+                alt="Modern desk"
+                class="productImage"
+                loading="lazy">
+
+            <h2>Desk</h2>
+
+            <p class="price">£199</p>
+
+            <button
+                class="cartBtn"
+                type="button"
+                data-name="Desk"
+                data-price="199">
+                Add to Cart
+            </button>
+
+        </article>
+
+        <!-- Wardrobe -->
+        <article class="card">
+
+            <img
+                src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=700&q=80"
+                alt="Modern wardrobe"
+                class="productImage"
+                loading="lazy">
+
+            <h2>Wardrobe</h2>
+
+            <p class="price">£449</p>
+
+            <button
+                class="cartBtn"
+                type="button"
+                data-name="Wardrobe"
+                data-price="449">
+                Add to Cart
+            </button>
+
+        </article>
+
+    </section>
+
+    <!-- ================= CART ================= -->
+    <section class="cart" id="cart" aria-label="Shopping cart">
+
+        <h2>
+            🛒 Your Cart:
+            <span id="cartCount">0</span>
+            <span class="cartItemsText">Items</span>
+        </h2>
+
+        <div id="cartItems"></div>
+
+        <p id="emptyCartMessage" class="emptyCartMessage">
+            Your cart is empty.
+        </p>
+
+        <h3 id="cartTotal">
+            Total: £0
+        </h3>
+
+        <button
+            class="buyBtn"
+            id="buyBtn"
+            type="button">
+            🛍️ Buy Now
+        </button>
+
+    </section>
+
+</main>
+
+<!-- ================= PROFILE MODAL ================= -->
+<div id="profileModal" class="modalOverlay" hidden>
+
+    <div class="modalBox" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="profileTitle">
+
+        <button type="button" class="modalCloseBtn" data-close-modal="profileModal" aria-label="Close profile">✕</button>
+
+        <h2 id="profileTitle">Your Profile</h2>
+
+        <img id="profilePic" class="profilePic" src="" alt="Profile picture">
+
+        <dl class="profileDetails">
+            <dt>Username</dt>
+            <dd id="profileUsername"></dd>
+
+            <dt>Email</dt>
+            <dd id="profileEmail"></dd>
+
+            <dt>Password</dt>
+            <dd id="profilePassword"></dd>
+        </dl>
+
+    </div>
+
+</div>
+
+<!-- ================= LOGIN MODAL ================= -->
+<div id="loginModal" class="modalOverlay" hidden>
+
+    <div class="modalBox" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="loginTitle">
+
+        <button type="button" class="modalCloseBtn" data-close-modal="loginModal" aria-label="Close login form">✕</button>
+
+        <h2 id="loginTitle">Login</h2>
+
+        <form id="loginForm" novalidate>
+
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="username" aria-describedby="loginError" maxlength="254" required>
+
+            <label for="loginPassword">Password</label>
+            <div class="passwordField">
+                <input type="password" id="loginPassword" placeholder="Password" autocomplete="current-password" aria-describedby="loginError" maxlength="128" required>
+                <button type="button" class="togglePasswordBtn" data-toggle-for="loginPassword" aria-pressed="false" aria-label="Show password">👁️</button>
+            </div>
+
+            <p id="loginError" class="authError" aria-live="polite"></p>
+
+            <button type="submit" class="authSubmitBtn">Login</button>
+
+        </form>
+
+        <p class="modalSwitchText">
+            No account yet?
+            <button type="button" class="linkBtn" id="switchToSignup">Sign up</button>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ================= SIGN UP MODAL ================= -->
+<div id="signupModal" class="modalOverlay" hidden>
+
+    <div class="modalBox" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="signupTitle">
+
+        <button type="button" class="modalCloseBtn" data-close-modal="signupModal" aria-label="Close sign up form">✕</button>
+
+        <h2 id="signupTitle">Sign Up</h2>
+
+        <form id="signupForm" novalidate>
+
+            <label for="signupUsername">Username</label>
+            <input type="text" id="signupUsername" placeholder="Username" autocomplete="nickname" aria-describedby="signupError" maxlength="40" required>
+
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" placeholder="you@example.com" autocomplete="email" aria-describedby="signupError" maxlength="254" required>
+
+            <label for="signupPassword">Password</label>
+            <div class="passwordField">
+                <input type="password" id="signupPassword" placeholder="Password" autocomplete="new-password" aria-describedby="signupPasswordHint signupError" maxlength="128" required>
+                <button type="button" class="togglePasswordBtn" data-toggle-for="signupPassword" aria-pressed="false" aria-label="Show password">👁️</button>
+            </div>
+            <p id="signupPasswordHint" class="fieldHint">At least 8 characters, with a number and a special character (e.g. ! @ # $).</p>
+
+            <label for="signupPic">Profile picture (optional)</label>
+            <input type="file" id="signupPic" accept="image/*">
+
+            <img id="signupPicPreview" class="signupPicPreview" src="" alt="" hidden>
+
+            <label for="signupCaptcha" id="captchaLabel">Security check: <span id="captchaQuestion"></span></label>
+            <input type="text" id="signupCaptcha" inputmode="numeric" autocomplete="off" aria-describedby="signupError" maxlength="4" required>
+
+            <p id="signupError" class="authError" aria-live="polite"></p>
+
+            <button type="submit" class="authSubmitBtn">Create account</button>
+
+        </form>
+
+        <p class="modalSwitchText">
+            Already have an account?
+            <button type="button" class="linkBtn" id="switchToLogin">Login</button>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ================= RATING MODAL ================= -->
+<div id="ratingModal" class="modalOverlay" hidden>
+
+    <div class="modalBox" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="ratingTitle">
+
+        <button type="button" class="modalCloseBtn" data-close-modal="ratingModal" aria-label="Close rating form">✕</button>
+
+        <h2 id="ratingTitle">Rate your shopping experience</h2>
+
+        <div id="starRating" class="starRating" role="radiogroup" aria-label="Star rating">
+            <button type="button" class="starBtn" data-star="1" role="radio" aria-checked="false" aria-label="1 star" tabindex="0">★</button>
+            <button type="button" class="starBtn" data-star="2" role="radio" aria-checked="false" aria-label="2 stars" tabindex="-1">★</button>
+            <button type="button" class="starBtn" data-star="3" role="radio" aria-checked="false" aria-label="3 stars" tabindex="-1">★</button>
+            <button type="button" class="starBtn" data-star="4" role="radio" aria-checked="false" aria-label="4 stars" tabindex="-1">★</button>
+            <button type="button" class="starBtn" data-star="5" role="radio" aria-checked="false" aria-label="5 stars" tabindex="-1">★</button>
+        </div>
+
+        <button type="button" id="submitRatingBtn" class="authSubmitBtn" disabled>Submit rating</button>
+        <button type="button" id="skipRatingBtn" class="linkBtn skipRatingBtn">Skip</button>
+
+    </div>
+
+</div>
+
+<script src="my wt-et bs.js" defer></script>
+
+
+</body>
+
+</html>
